@@ -17,12 +17,40 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
-    
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
   }
   const handleSubmit = (e) => {
+    e.preventDefault()
 
+    setLoading(true)
+    emailjs.send(
+      'service_8apix3f',
+      'template_x3u31b9',
+      {
+        from_name: form.name,
+        to_name: 'Julian',
+        form_email: form.email,
+        to_mail: 'julianmatiassafadi@gmail.com',
+        message: form.message
+      },
+      'hJgDsIzvj6sFsRMki'
+    ).then(
+      () => {
+        setLoading(false)
+        alert('Thank you for contacting me. I will response as soon as posible.')
+        setForm({
+          name: '',
+          email: '',
+          message: ''
+        })
+      }, (error) => {
+        setLoading(false)
+        console.error(error)
+        alert('Something went wrong. Please contact me in another way.')
+      }
+    )
   }
-
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
@@ -41,17 +69,17 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your name</span>
-            <input type='text' name='name' value={form.name} placeholder="What's your name" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
+            <input type='text' name='name' value={form.name} onChange={handleChange} placeholder="What's your name?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
           </label>
           
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
-            <input type='email' name='email' value={form.email} placeholder="What's your email" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
+            <input type='email' name='email' value={form.email} onChange={handleChange} placeholder="What's your email?" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
           </label>
 
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your message</span>
-            <textarea rows='7' name='message' value={form.message} placeholder="Write your message" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
+            <textarea rows='7' name='message' value={form.message} onChange={handleChange} placeholder="Write your message" className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'/>
           </label>
           <button 
           type='submit' 
