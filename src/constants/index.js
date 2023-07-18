@@ -15,14 +15,14 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  wordpress,
   threejs,
+  pistacho,
+  batatabit,
+  helix,
+  clothify,
+  pokedux,
+  githubsearcher
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +35,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,21 +46,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Learning ability",
+    description: "Technology is constantly evolving. My passion and curiosity for development drives me to adapt to those changes that keep me up-to-date with the most required technologies. I participate in various communities where I have found people willing to teach without any expectation of reward.",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Teamwork",
+    description: "In my previous jobs, I learned the importance of working in a team. This allowed us not only to share ideas and creative solutions, but also to work more efficiently to achieve our goals. I always try to communicate in the most effective way possible, as I consider it essential in a team.",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Dedication and proactivity",
+    description: "In my work as a developer, I aim to anticipate problems and take measures to prevent or solve them before they become major obstacles. When I set a goal, I focus on putting in the necessary effort to achieve it.",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+
 ];
 
 const technologies = [
@@ -116,55 +120,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Wordpress Developer",
+    company_name: "Freelance",
+    icon: wordpress,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining web site using Wordpress and Divi Builder and other related technologies.",
+      "Constant communication with the client in order to best meet the design requirements and any possible enhancements.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];
@@ -198,16 +162,62 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "By Pistacho",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This was my first freelance job. A website created with WordPress and Divi Builder for a product company. Based on the client's requirements, I am still providing maintenance and will add new features in the future.",
+    tags: [
+      {
+        name: "wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "diviBuilder",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pistacho,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Batatabit Crypto",
+    description:
+      "At Batatabit, you can find information about the top 50 cryptocurrencies by market capitalization. You can view their price, ranking, and 24-hour variation..",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restAPI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: batatabit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Clothify",
+    description:
+      "At Batatabit, you can find information about the top 50 cryptocurrencies by market capitalization. You can view their price, ranking, and 24-hour variation.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
         color: "green-text-gradient",
       },
       {
@@ -215,49 +225,74 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: clothify,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "GitHub Searcher",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Github profile finder developed with React. You can search for any user and their information. For example, description, number of repositories, followers, and following. I styled it with MaterialUI and consumed the Github Profiles API.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "styledComponents",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: githubsearcher,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Helix Eye",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "At Helix Eye, you can see real information about outer space and its galaxies. The information is provided by NASA's official API.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "styledComponents",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: helix,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Pokedux",
+    description:
+      "Using the pokeAPI, I created this React application where you can view 50 Pokemon, their types, and images. The global state of the application is managed with Redux. You can filter by name and choose your favorites.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "antDesing",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pokedux,
     source_code_link: "https://github.com/",
   },
 ];

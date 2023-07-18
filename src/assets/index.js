@@ -25,10 +25,15 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import wordpress from "./Wordpress_Blue_logo.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
+import pistacho from "./pistacho.png"
+import batatabit from "./batatabit.png"
+import helix from "./helix-eye.png"
+import clothify from "./clothify.png"
+import pokedux from "./pokeduxpre.png"
+import githubsearcher from "./gh-user-searcher.png"
 
 export {
   logo,
@@ -55,8 +60,12 @@ export {
   meta,
   shopify,
   starbucks,
+  wordpress,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  pistacho,
+  batatabit,
+  helix,
+  clothify,
+  pokedux,
+  githubsearcher
 };

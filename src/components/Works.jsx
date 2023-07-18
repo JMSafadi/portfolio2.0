@@ -73,7 +73,7 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-        I am full-stack javascript web developer looking for my first IT work experience to help launch my career. Specialized in React, interested in deploying scalable and user-friendly projects while considering UX strategies. I would like to be part of a team, surrounded by experienced people, and help achieve objectives. At the same time, I want to continue learning new tools and technologies constantly.
+        Welcome to my projects section! Here you'll discover a diverse collection of my work as a developer, highlighting my expertise in both front-end and back-end development. Each project has been a captivating challenge that has allowed me to showcase my knowledge and skills while continuously refining my code and adhering to industry best practices.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
