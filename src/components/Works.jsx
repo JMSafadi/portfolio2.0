@@ -1,18 +1,18 @@
 import { Tilt } from "react-tilt"
 import { motion } from "framer-motion"
 import { styles } from '../styles'
-import { github } from '../assets'
+import { github, open } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, deploy_link }) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
     >
-      <Tilt
-        options={{ max: 45, scale: 1, speed: 450 }}
+      <div
+        // options={{ max: 10, scale: 1, speed: 1000 }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
       <div className="relative w-full h-[230px]">
@@ -21,8 +21,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           alt={name}
           className='w-full h-full object-cover rounded-2xl'
         />
-      </div>
-      <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+      <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
         <div
           onClick={() => window.open(source_code_link, 'blank')}
           className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -34,14 +33,15 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           />
         </div>
         <div
-          onClick={() => window.open(source_code_link, 'blank')}
+          onClick={() => window.open(deploy_link, 'blank')}
           className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
         >
           <img
-            src={github} 
-            alt='github'
+            src={open} 
+            alt='open'
             className="w-1/2 h-1/2 object-contain"
           />
+        </div>
         </div>
       </div>
       <div className="mt-5">
@@ -55,7 +55,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           </p>
         ))}
       </div>
-      </Tilt>
+      </div>
     </motion.div>
   )
 }
@@ -76,7 +76,7 @@ const Works = () => {
         Welcome to my projects section! Here you'll discover a diverse collection of my work as a developer, highlighting my expertise in both front-end and back-end development. Each project has been a captivating challenge that has allowed me to showcase my knowledge and skills while continuously refining my code and adhering to industry best practices.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex justify-center flex-wrap gap-7">
         { projects.map((project, index) => (
           <ProjectCard key={`project-${index}`}  index={index} { ...project }  />
         )) }
@@ -87,4 +87,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, '')
+export default SectionWrapper(Works, 'projects')

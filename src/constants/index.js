@@ -1,29 +1,30 @@
 import {
   mobile,
   backend,
-  creator,
+  // creator,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
+  // javascript,
+  // typescript,
+  // html,
+  // css,
+  // reactjs,
+  // redux,
+  // tailwind,
+  // nodejs,
+  // mongodb,
+  // git,
+  // figma,
+  // docker,
   wordpress,
-  threejs,
+  // threejs,
   pistacho,
+  promptastic,
   batatabit,
   helix,
   clothify,
   pokedux,
   githubsearcher
-} from "../assets";
+} from "../assets"
 
 export const navLinks = [
   {
@@ -61,62 +62,14 @@ const services = [
     icon: backend,
   },
 
-];
+]
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+// const technologies = [
+//   {
+//     name: "HTML 5",
+//     icon: html,
+//   },
+// ]
 
 const experiences = [
   {
@@ -131,34 +84,17 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
-];
+]
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+// const testimonials = [
+//   {
+//     testimonial:"",
+//     name: "",
+//     designation: "",
+//     company: "",
+//     image: "",
+//   }
+// ]
 
 const projects = [
   {
@@ -175,12 +111,43 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "jQuery",
         color: "pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "yellow-text-gradient",
       },
     ],
     image: pistacho,
     source_code_link: "https://github.com/",
+    deploy_link: "https://www.bypistacho.com/",
+  },
+  {
+    name: "Promptastic",
+    description:
+      "Discover and share captivating prompts to enhance the power of IA on this new social network. Join a passionate community where you can uncover unlimited inspiration, exchange creative ideas!",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nextAuth",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: promptastic,
+    source_code_link: "https://github.com/JMSafadi/promptastic",
+    deploy_link: "https://promptastic-nine.vercel.app/",
   },
   {
     name: "Batatabit Crypto",
@@ -201,16 +168,17 @@ const projects = [
       },
       {
         name: "restAPI",
-        color: "pink-text-gradient",
+        color: "yellow-text-gradient",
       },
     ],
     image: batatabit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JMSafadi/crypto-exchange-batatabit",
+    deploy_link: "https://batatabitcrypto.web.app/",
   },
   {
     name: "Clothify",
     description:
-      "At Batatabit, you can find information about the top 50 cryptocurrencies by market capitalization. You can view their price, ranking, and 24-hour variation.",
+      "Clothify is an e-commerce website built with React and styled with TailwindCSS. You can add as many items as you want to your shopping cart and view each product in detail on a separate route. It is responsive for any device.",
     tags: [
       {
         name: "react",
@@ -226,7 +194,8 @@ const projects = [
       },
     ],
     image: clothify,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JMSafadi/clothify",
+    deploy_link: "https://shop-clothify.web.app/",
   },
   {
     name: "GitHub Searcher",
@@ -238,16 +207,17 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "styledComponents",
+        name: "materialUI",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
+        name: "webpack",
         color: "pink-text-gradient",
       },
     ],
     image: githubsearcher,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JMSafadi/gh-users-searcher",
+    deploy_link: "https://jmsafadi.github.io/gh-users-searcher/",
   },
   {
     name: "Helix Eye",
@@ -268,7 +238,8 @@ const projects = [
       },
     ],
     image: helix,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JMSafadi/helix-eye",
+    deploy_link: "https://helix-eye.web.app/",
   },
   {
     name: "Pokedux",
@@ -289,12 +260,17 @@ const projects = [
       },
       {
         name: "axios",
-        color: "pink-text-gradient",
+        color: "yellow-text-gradient",
       },
     ],
     image: pokedux,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/JMSafadi/pokedux",
+    deploy_link: "https://pokedux-app.web.app/",
   },
-];
+]
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services, 
+  experiences, 
+  projects 
+}
