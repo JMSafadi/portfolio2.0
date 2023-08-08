@@ -26,6 +26,8 @@ import threejs from "./tech/threejs.svg"
 
 // Experience section assets
 import wordpress from "./Wordpress_Blue_logo.png"
+import epb from "./EPB.png"
+import sbx from "./starbucks-logo-png-transparent.png"
 
 // Projects section assets
 import pistacho from "./pistacho.png"
@@ -64,6 +66,8 @@ export {
   // typescript,
   // threejs,
   wordpress,
+  epb,
+  sbx,
   pistacho,
   promptastic,
   batatabit,

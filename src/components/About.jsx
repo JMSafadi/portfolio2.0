@@ -4,7 +4,7 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
-import cv from '../assets/julianSafadiEn.pdf'
+import cv from '../assets/CV Julian Safadi - Web Developer.pdf'
 
 const ServiceCard = ({ index, title, icon, description }) => {
   return (
@@ -42,7 +42,7 @@ const About = () => {
       I am a front-end developer in search of my first professional experience in IT. Specialized in React, and with knowledge in back-end, I am interested in deploying scalable and user-friendly projects, taking into account UX strategies. My current English level is B2, while I continue to improve. I would like to be part of a working team, surrounded by more experienced individuals to help achieve objectives, and at the same time, continue learning new tools and technologies constantly.
       </motion.p>
       <motion.div variants={textVariant()}>
-        <a href={cv} download='Julian Safadi'> 
+        <a href={cv} download='CV Julian Safadi - Web Developer'> 
           <button type='button' className='bg-tertiary mt-6 py-3 px-8 outline-none w-fit font-bold shadow-md shadow-primary rounded-xl'>
             Download CV
           </button>
