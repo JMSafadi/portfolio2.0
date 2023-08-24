@@ -21,6 +21,7 @@ import {
   // threejs,
   pistacho,
   promptastic,
+  tempearth,
   batatabit,
   helix,
   clothify,
@@ -174,6 +175,32 @@ const projects = [
     image: promptastic,
     source_code_link: "https://github.com/JMSafadi/promptastic",
     deploy_link: "https://promptastic-nine.vercel.app/",
+  },
+  {
+    name: "Tempearth",
+    description:
+      "Discover the world through the lens of weather with Tempearth. Our platform grants you instant access to the weather conditions of any corner of the planet. Welcome to Tempearth: Your compass in the world of weather!",
+    tags: [
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "graphQL",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tempearth,
+    source_code_link: "https://github.com/JMSafadi/tempearth",
+    deploy_link: "https://tempearth.vercel.app/",
   },
   {
     name: "Batatabit Crypto",

@@ -32,6 +32,7 @@ import sbx from "./starbucks-logo-png-transparent.png"
 // Projects section assets
 import pistacho from "./pistacho.png"
 import promptastic from "./prompastic-pre.png"
+import tempearth from "./tempearth.png"
 import batatabit from "./batatabit.png"
 import helix from "./helix-eye.png"
 import clothify from "./clothify.png"
@@ -70,6 +71,7 @@ export {
   sbx,
   pistacho,
   promptastic,
+  tempearth,
   batatabit,
   helix,
   clothify,
