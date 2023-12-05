@@ -26,6 +26,7 @@ import {
   helix,
   clothify,
   pokedux,
+  survey,
   githubsearcher
 } from "../assets"
 
@@ -201,6 +202,32 @@ const projects = [
     image: tempearth,
     source_code_link: "https://github.com/JMSafadi/tempearth",
     deploy_link: "https://tempearth.vercel.app/",
+  },
+  {
+    name: "Poll form",
+    description:
+      "This project was a challenge for a job interview. It's a survey form built in React and connected to a Firebase database. Once you complete the fields, you can be redirected to another route where you can see all the stored data.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "materialUI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: survey,
+    source_code_link: "https://github.com/JMSafadi/poll-form",
+    deploy_link: "https://poll-form.web.app/",
   },
   {
     name: "Batatabit Crypto",

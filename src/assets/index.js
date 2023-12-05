@@ -38,6 +38,7 @@ import helix from "./helix-eye.png"
 import clothify from "./clothify.png"
 import pokedux from "./pokeduxpre.png"
 import githubsearcher from "./gh-user-searcher.png"
+import survey from "./survey.png"
 import github from "./github.png"
 import open from "./open-site.png"
 
@@ -78,6 +79,7 @@ export {
   pokedux,
   githubsearcher,
   github,
+  survey,
   open,
   ubication,
   email,
